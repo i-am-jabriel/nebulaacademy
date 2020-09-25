@@ -1,0 +1,4 @@
+/*
+here are some notes about thing i learned today
+
+*/
