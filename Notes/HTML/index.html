@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Abe's First Webpage</title>
+        <script>
+            var list=['http://reddit.com','http://youtube.com','http://twitter.com','http://amazon.com']
+            function stumbleUpon(){
+                document.location = list[Math.floor(Math.random() * list.length)]
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to my domain</h1>
+        <p>I made this dontcha know</p>
+        <p>im super proud</p>
+        <p>all my teachers said i wouldnt ever be anything</p>
+        <h6>but look at me now</h6>
+        <button href='#' onclick='stumbleUpon()'>Bored?</button>
+    </body>
+</html>
