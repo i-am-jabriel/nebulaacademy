@@ -1,0 +1,50 @@
+
+body{
+    background:#333;
+    color:#fff;
+    padding:30px 10px;
+}
+.small{
+    color:grey;
+}
+.small b{
+    font-size:110%;
+    color:white;
+}
+.play-buttons{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.flex{
+    display:flex;
+    justify-content: center;
+}
+button{
+    opacity:0.8;
+    cursor: pointer;
+}
+button:hover{
+    opacity:1;
+}
+.green-button{
+    background:green;
+}
+.grey-button{
+    background:#666;
+}
+.container{
+    border:1px solid #333;
+    background:#666;
+}
+.jumbotron{
+    width:30vw;
+    min-width:320px;
+}
+.grow{
+    flex-grow:1;
+}
+.main-container{
+    max-width:800px;
+    justify-content: center;
+}
