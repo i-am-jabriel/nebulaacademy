@@ -1,8 +1,21 @@
 
 body{
-    background:#333;
+    background:#444;
     color:#fff;
     padding:30px 10px;
+}
+.main-title{
+    margin-top:-15px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+.lead-image{
+    height:496px;
+    width:496px;
+}
+.puzzle-image{
+    height:400px;
+    width:400px;
 }
 .small{
     color:grey;
@@ -16,35 +29,119 @@ body{
     flex-direction:column;
     justify-content: center;
 }
-.flex{
+.flex,.row{
     display:flex;
     justify-content: center;
+    flex-direction: row;
+}
+.col{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.new-line{
+    flex-basis:100%;
+    width:0;
 }
 button{
     opacity:0.8;
     cursor: pointer;
+    border:none;
 }
 button:hover{
     opacity:1;
 }
+.play-button{
+    border-radius:10px;
+    margin-bottom:30px;
+    color:white;
+}
+.play-button img{
+    width:55px;
+    height:55px;
+}
+.play-button:hover{
+    outline:5px 5px #fff;
+}
 .green-button{
-    background:green;
+    background:#7fa650;
+    box-shadow: 0 9px #5d842e;
 }
 .grey-button{
     background:#666;
+    box-shadow: 0 9px #555;
 }
 .container{
     border:1px solid #333;
     background:#666;
 }
-.jumbotron{
-    width:30vw;
-    min-width:320px;
-}
 .grow{
     flex-grow:1;
 }
 .main-container{
-    max-width:800px;
-    justify-content: center;
+    max-width:1200px;
+    justify-content: flex-start;
+    margin-left: 180px;
+}
+.sidebar-col{
+    height:100vh;
+    width:145px;
+    background:#666;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+}
+.sidebar-col, .sidebar-col button{
+    background:#333;
+}
+.sidebar-col button:hover{
+    background:#000;
+}
+.solve-chess-puzzles{
+    background: #333;;
+    margin-top:40px;
+    padding:20px 50px;
+}
+.solve-chess-puzzles button{
+    width:220px;
+    padding:5px 30px;
+}
+.nakamura-image{
+    width:148px;
+    height:148px;
+    margin-right:20px;
+}
+.gm{
+    background: #900;
+    color:white;
+    border-radius:6px;
+    padding:.2rem .3rem;
+}
+.sprite::before{
+    background:url('https://www.chess.com/bundles/web/images/sprites/nav.3e905dc4.png');
+}
+.chess-logo{
+
+}
+.puzzle-quote{
+    width:320px;
+    margin-right:120px;
+}
+.solve-chess-puzzles{
+    color:#AAA;
+}
+.solve-chess-puzzles h1{
+    color:white;
+}
+.main-container{
+    flex-wrap:wrap;
+}
+.break-row{
+    height:0;
+    flex-basis:100%;
+}
+.break-col{
+    width:0;
+    flex-basis:100%;
 }
